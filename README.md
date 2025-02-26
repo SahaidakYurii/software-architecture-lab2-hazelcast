@@ -17,7 +17,7 @@
    python3 ./python/map_blocking.py [-h] (-n | -o | -p)
    ```
    ```bash
-   python3 ./python/queue.py [-h] [-c --consumers] [-p --producers]
+   python3 ./python/queue.py [-h] [-c CONSUMERS] [-p PRODUCERS]
    ```
 4. Stop Hazelcast
    ```bash
@@ -75,14 +75,14 @@ To increment with 3 clients without blocking use `python3 map_blocking.py -p|--p
 The value: 30000
 Time: 16.774216890335083
 ```
-No datarace, the computatyiom time is longer than without blocking
+No data-race, the computation time is longer than without blocking
 ### Task 6: Optimistic blocking
 To increment with 3 clients without blocking use `python3 map_blocking.py -o|--optimistic`. The result is
 ```
 The value: 30000
 Time: 14.837647914886475
 ```
-No datarace, the computatyiom time is longer than without blocking
+No data-race, the computation time is longer than without blocking
 ### Task 7: Compare optimistic vs pessimistic blocking
 The optimistic blocking is faster by approximately 1.9 seconds 
 ### Task 8: Bounded queue
