@@ -11,7 +11,13 @@
    ```
 3. Run python files
    ```bash
-   python3 ./python/<prog>.py
+   python3 ./python/map.py
+   ```
+   ```bash
+   python3 ./python/map_blocking.py [-h] (-n | -o | -p)
+   ```
+   ```bash
+   python3 ./python/queue.py [-h] [-c --consumers] [-p --producers]
    ```
 4. Stop Hazelcast
    ```bash
